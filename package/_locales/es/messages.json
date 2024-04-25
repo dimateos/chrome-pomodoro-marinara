@@ -706,7 +706,7 @@
     }
   },
   "n_minutes": {
-    "message": "$count$ min.",
+    "message": "$count$m",
     "description": "Badge tooltip and overlay text when timer has least 1 minute remaining.",
     "placeholders": {
       "count": {
@@ -716,7 +716,7 @@
     }
   },
   "less_than_minute": {
-    "message": "<1 min.",
+    "message": "<1m",
     "description": "Badge tooltip and overlay text when timer has less than 1 minute remaining."
   },
   "time_remaining": {
@@ -729,6 +729,7 @@
       }
     }
   },
+
   "missing_pomodoro_data": {
     "message": "Faltan datos Pomodoro.",
     "description": "Error when imported history has no Pomodoro information."

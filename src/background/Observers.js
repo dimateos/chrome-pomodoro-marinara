@@ -41,8 +41,11 @@ class BadgeObserver
       [Phase.LongBreak]: M.long_break
     }[phase];
 
+    text_icon = text
     if (minutes != null) {
-      text = minutes < 1 ? M.less_than_minute : M.n_minutes(minutes);
+      min_text = minutes < 1 ? M.less_than_minute : minutes
+      text = M.n_minutes(min_text);
+      text_icon = M.n_minutes_icon(min_text);
       tooltip = M.browser_action_tooltip(title, M.time_remaining(text));
     } else {
       tooltip = M.browser_action_tooltip(title, tooltip);
@@ -50,7 +53,7 @@ class BadgeObserver
 
     let color = phase === Phase.Focus ? '#bb0000' : '#11aa11';
     chrome.browserAction.setTitle({ title: tooltip });
-    chrome.browserAction.setBadgeText({ text });
+    chrome.browserAction.setBadgeText({ text_icon });
     chrome.browserAction.setBadgeBackgroundColor({ color });
   }
 

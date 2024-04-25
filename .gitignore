@@ -1,5 +1,7 @@
 # Workspaces
+__user*/
 .idea/
+.vscode/
 *.code-workspace
 
 # Development files.

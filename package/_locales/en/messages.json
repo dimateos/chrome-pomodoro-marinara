@@ -806,8 +806,18 @@
     }
   },
   "n_minutes": {
+    "message": "$count$ Min",
+    "description": "Badge tooltip text when timer has least 1 minute remaining.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "n_minutes_icon": {
     "message": "$count$m",
-    "description": "Badge tooltip and overlay text when timer has least 1 minute remaining.",
+    "description": "Timer icon text when timer has least 1 minute remaining. Should be short to avoid text being cropped.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -816,8 +826,8 @@
     }
   },
   "less_than_minute": {
-    "message": "<1m",
-    "description": "Badge tooltip and overlay text when timer has less than 1 minute remaining."
+    "message": "<1",
+    "description": "Amount of minutes displayed when timer has less than 1 minute remaining."
   },
   "time_remaining": {
     "message": "$time$ Remaining",

@@ -396,6 +396,9 @@ class Messages
   n_minutes(count) {
     return chrome.i18n.getMessage('n_minutes', [count]);
   }
+  n_minutes_icon(count) {
+    return chrome.i18n.getMessage('n_minutes_icon', [count]);
+  }
   get never() {
     return chrome.i18n.getMessage('never', []);
   }
